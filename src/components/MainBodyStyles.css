@@ -1,0 +1,156 @@
+.container1 {
+  position: relative;
+  margin-top: 100px;
+  max-width: 100%;
+  top: -100px;
+  /* left: -10px; */
+}
+.con {
+  height: 780vh;
+  background: linear-gradient(
+    to bottom,
+    rgb(171, 222, 238) 9%,
+    /* rgb(171, 222, 238) 9%, */
+    #B177DA 8%
+    /* rgb(182, 55, 251) 8% */
+  );
+}
+.shadow .list1 {
+  color: #000;
+  font-size: 14px;
+  width: 210px;
+  /* padding: -7px; */
+  /* height: 425px; */
+  margin-top: -8vh;
+  border-radius: .4rem;
+  background-color: #fff;
+  position: absolute;
+  margin-left: 20px;
+}
+
+
+.category{
+  background-color: #fff;
+  width: 770px;
+  height: 410px;
+  margin-top: -20px;
+  font-size: 12px;
+
+  margin-left: 199px;
+}
+
+.nestedSubcat {
+  font-size: 11px;
+  /* display: block; */
+  flex-direction: column;
+  margin: -10px;
+  /* position: absolute; */
+  margin-left: -30px;
+  margin-top: 58px;
+}
+
+.categories {
+  padding: 10px;
+  margin: 10px;
+  margin-top: -10px;
+}
+
+.ul1 .list-group-item:hover {
+  color: orange;
+}
+
+/* .ul2 .me-auto:hover {
+  color: orange;
+  background: none;
+} */
+
+.container1 .banner {
+  margin-left: 240px;
+  left: 20%;
+  margin-top: -57px;
+  width: 790px;
+  height: 438px;
+}
+
+.container1 .shadow {
+  width: 89%;
+  height: 165vh;
+  background: linear-gradient(
+    to bottom,
+    rgb(171, 222, 238) 30%,
+    /* rgb(171, 222, 238) 30%, */
+    #B177DA 10%
+    /* #B177DA 10% */
+    /* rgb(182, 55, 251) 10% */
+  );
+  position: absolute;
+  margin-left: 80px;
+  /* border-right: 6px solid #B177DA; */
+  margin-top: 70px;
+  /* box-shadow: 0 10px 0 10px rgba(0,0,0,0.1); */
+}
+
+.container1 .list2 {
+  position: absolute;
+  left: 17%;
+  margin-top: -43vh;
+  font-size: 16px;
+  /* width: 240px;
+  height: 430px; */
+}
+.container1 .ul2 {
+  color: #000;
+  background-color: #fff;
+  border-radius: .4rem;
+  width: 210px;
+  height: 210px;
+  position: absolute;
+  margin-left: 121vh;
+  margin-top: -100px;
+}
+.ms-1 h5 {
+  margin-left: -20px;
+  margin-top: -10px;
+}
+.ms-1 p {
+  margin-left: -1px;
+  font-size: 13px;
+}
+.container1 .image {
+  width: 210px;
+  height: 190px;
+  margin-left: 153vh;
+  margin-top: -32vh;
+}
+
+@media screen and (max-width: 1000px) and (min-width: 100px) {
+  .container1 {
+    width: 900px;
+    height: 950px;
+  }
+
+  .list1 {
+    margin-left: 100px;
+    margin-top: 10px;
+  }
+  .container1 .ul1 {
+    width: 200px;
+  }
+  .container1 .banner {
+    width: 400px;
+    height: 37px;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  .container1 .list2 {
+    margin-top: 70px;
+  }
+  .container1 .ul2 {
+    width: 200px;
+  }
+  .container1 .image {
+    margin-left: 690px;
+    margin-top: 10px;
+    width: 200px;
+  }
+}

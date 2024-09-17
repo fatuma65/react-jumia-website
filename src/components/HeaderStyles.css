@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  /* padding: 0; */
+  /* height: 100vh; */
+}
+.list img {
+  width: 20px;
+}
+.setter {
+  background-color: rgb(171, 222, 238);
+  /* background-color: rgb(163, 123, 201); */
+  width: 100%;
+  /* padding: 10px; */
+  height: 80px;
+  color: #fff;
+  position: relative;
+}
+.sell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 100px; */
+}
+.sell img {
+  margin-left: 100px;
+}
+
+.jumia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25rem;
+  /* width:0px; */
+  /* height: 30px; */
+}
+.jumia img {
+  width: 10px;
+  margin-left: -10px;
+}
+.inner {
+  margin-left: 100px;
+  width: 85%;
+
+}
+.main .logo {
+  display: flex;
+  align-items: center;
+  /* border: 2px solid #000; */
+  align-items: center;
+  justify-content: center;
+  margin: -15px;
+
+}
+.logo img {
+  margin-left: 10px; 
+}
+.logo li {
+  /* color: #000; */
+  margin-left: -15px;
+}
+.list {
+  display: flex;
+  /* border: 3px solid #000; */
+}
+.main .list {
+  background-color: rgb(226, 231, 233);
+  display: flex;
+  color: #c3bfbf;
+  position: relative;
+  margin-top: -18px;
+  font-size: 14px;
+}
+li {
+  display: inline;
+  padding: 20px;
+}
+.list p {
+  color: orange;
+  margin: 10px;
+  /* margin-left: 20vh;
+  margin-bottom: 10px; */
+}
+.list ul {
+  position: absolute;
+  left: 50%;
+}
+.list h6 {
+  color: #000;
+  font-weight: 900px;
+  font-size: 16px;
+  margin: 10px;
+}
+.list .food {
+  display: flex;
+  /* top: -23px; */
+  cursor: pointer;
+  /* margin: 2px; */
+  /* width: 100px; */
+ margin: -10px;
+ /* margin-left: -130px; */
+ /* padding: -10px; */
+  align-items: center;
+
+}
+.food2 {
+  margin-left: -25px;
+}
+.food1:hover {
+
+  color: #000;
+}
+.food2:hover {
+
+  color: blue;
+}
+/* .inner .call1 {
+  color: #000;
+  margin-left: 128vh;
+  display: flex;
+  font-size: 15px;
+  margin-top: -40px;
+  position: absolute;
+} */
+/* .inner .call {
+  margin-top: -60px;
+  font-size: 16px;
+  right: 71vh;
+  display: flex;
+  position: absolute;
+} */
+
