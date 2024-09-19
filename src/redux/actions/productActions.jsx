@@ -1,6 +1,7 @@
 import { productsTypes, productType } from "./types";
 
 export const fetchAllProducts = (products) => {
+  console.log(products)
   return {
     type: productsTypes.FETCH_ALL_PRODUCTS,
     payload: products,

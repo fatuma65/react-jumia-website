@@ -18,3 +18,7 @@ export const productType = {
     FETCH_PRODUCT_FAILURE: 'FETCH_PRODUCT__FAILURE'
 }
 
+export const categoriesTypes = {
+    FETCH_CATEGORIES: 'FETCH_CATEGORIES',
+    FETCH_CATEGORIES_FAILURE: 'FETCH_CATEGORIES_FAILURE'
+}

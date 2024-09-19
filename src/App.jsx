@@ -5,7 +5,6 @@ import Home from "./routes/Home";
 import Login from "./routes/Login";
 import UserAccount from "./routes/UserAccount";
 import ProductDetailsPage from "./routes/ProductDetailPage";
-import React from "react";
 
 const App = () => {
   const { isLoggedIn} = useSelector((state) => state.user)
@@ -16,7 +15,6 @@ const App = () => {
         <Route path="/login" element={<Login />}></Route>
         <Route path="/form" element={<Form />}></Route>
         <Route path="/product/details/:id" element={<ProductDetailsPage />}></Route>
-
 
         {isLoggedIn && (
           <>
