@@ -1,51 +1,52 @@
 // import "bootstrap/dist/css/bootstrap.min.css";
-import { useEffect, useState} from "react";
-// import image from "../assets/main-banner.png";
-import image from '../assets/main-banner.png';
+import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchCategories } from "../redux/actions/categoryActions";
+import image from "../assets/main-banner.png";
 import banner from "../assets/main-gif.gif";
 import Footer from "./Footer";
 import MainBody2 from "./MainBody2";
 import "./MainBodyStyles.css";
-// import axios from "axios";
-
 
 const MainBody = () => {
-  const [categories, setCategories] = useState([]);
   const [showCategories, setShowCategories] = useState(null);
+  const { categories } = useSelector((state) => state.category);
+  const [loading, setLoading] = useState(false);
+  const dispatch = useDispatch();
   useEffect(() => {
-  const fetchCategories = async () => {
-    try {
-      const response = await fetch(
-        "http://localhost:4000/category/get/allCategories"
-      );
-      const data = await response.json();
-      console.log(data)
-      if (Array.isArray(data)) {
-      setCategories(data)
+    const fetchAllCategories = async () => {
+      try {
+        setLoading(true);
+        const response = await fetch(
+          "http://localhost:4000/category/get/allCategories"
+        );
+        const data = await response.json();
+        console.log(data);
+        if (Array.isArray(data)) {
+          dispatch(fetchCategories(data));
+          setLoading(false);
+        } else {
+          console.log("The data is not an array", typeof data);
+        }
+      } catch (error) {
+        console.log(error);
       }
-      else{
-        console.log('The data is not an array', typeof data)
-      }
-      
-    } catch (error) {
-      console.log(error);
-    }
-  };
-  fetchCategories()
-}, [])
+    };
+    fetchAllCategories();
+  }, []);
   const handleHoveredCategoryMouse = (category) => {
     setShowCategories(category.id);
   };
   const handleHoveredCategoryLeave = () => {
     setShowCategories(null);
-  }
-  
+  };
   return (
     <>
       <div className="container1 ">
         <div className="con">
           <div className="shadow border-5">
             <div className="list1 ">
+              {loading && <p>Loading...</p>}
               {categories.length === 0 ? (
                 <p>No categories available</p>
               ) : (
@@ -83,7 +84,7 @@ const MainBody = () => {
                                   </>
                                 ))}
                               </div>
-                             </div>
+                            </div>
                           )}
                         </li>
                       </ul>
